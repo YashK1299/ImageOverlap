@@ -13,7 +13,6 @@ Pipeline:
 -- BFMatcher.knnMatch() =>returns k best matches where k is specified by the user. It may be useful when we need to do additional work on that.
 --BFMatcher.match() => gives best match
 -- Taking good matches using Lowe's ratio test: only for knnMatches in BF and for Flann
-
 -- src_pts - coordinates of good keypoints in image1
 -- dst_pts - coordinates of good keypoints in image2
 -- cv2.findHomography() returns a mask which specifies the inlier and outlier points. There can be some possible errors while matching which may affect the result. To solve this problem, algorithm uses RANSAC or LEAST_MEDIAN (which can be decided by the flags). So good matches which provide correct estimation are called inliers and remaining are called outliers.
